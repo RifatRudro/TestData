@@ -1,0 +1,17 @@
+ref,study,venue_year,protocol,eval_data,acc,bal_acc,macro_f1,f1_reported,auc,note
+1,Rahimi & Hachicha,BSPC 2026,split not stated,HAM10000 (7 cls),0.9821,,,,,overall accuracy only
+2,Sravani & Koppu,Front Public Health 2026,split not stated (1103-image validation subset),HAM10000 (7 cls),0.9637,,,0.9623,0.983,ensemble of 3 CNNs; AKIEC 70%
+3,Abualkebash et al.,PLOS ONE 2026,split not stated,HAM10000 (7 cls),,,,0.90,,weighted P/R/F1 0.90
+4,Sonune et al.,Bioengineering 2026,split not stated,HAM10000 (7 cls),0.9088,,,,0.921,DenseNet201 + SVM
+5,Hammad et al.,CMES 2025,SMOTEENN balancing (split not stated),HAM10000 (7 cls),0.9909,,,,,HybridFusionNet
+6,Cherukuri & Vara Prasad,Front Oncol 2025,5-fold CV (split not stated),HAM10000 (7 cls),0.9832,,,0.9815,,4-CNN ensemble
+8,BMC MIDM 2025,BMC Med Inform Decis Mak 2025,split not stated,HAM10000 (7 cls),0.913,,,,,fused inverted-residual nets
+11,Fiaz et al.,Front Med 2025,split not stated,HAM10000 (7 cls),0.85,,,,,segmentation + classification
+13,Shakil et al.,BECITHCON 2025,split not stated,HAM10000 (7 cls),,,,0.9736,,F1 averaging not stated
+15,Ahmmed et al.,J Imaging Inform Med 2026,split not stated,HAM10000 (7 cls),0.9862,,,,0.9997,Xception + CBAM
+16,Abualkebash et al.,BSPC 2025,split not stated,HAM10000 (7 cls),,,,0.93,,ViT + YOLOv8; balanced P/R/F1 0.93
+17,Murali & Mazumder,Sci Rep 2026,split not stated,HAM10000 (5 or 7 cls - check),0.948,,0.919,,0.957,metadata fusion
+20,Ali et al.,CMC 2025,split not stated,HAM10000 (7 cls),0.9674,,,0.9586,,XCViT
+PLCRD,PLCRD (arXiv 2607.18773),arXiv 2026,lesion-disjoint,HAM10000 (7 cls),,0.764,0.773,,0.976,lesion-level macro-F1; masks as privileged info
+PLCRD-ext,PLCRD (arXiv 2607.18773),arXiv 2026,trained on HAM10000,ISIC 2018 test,,,0.732,,,external; no retraining
+ISIC18-win,ISIC 2018 Task 3 winner,challenge 2018,official test,ISIC 2018 test,,0.885,,,,top-10 model average; external data allowed
